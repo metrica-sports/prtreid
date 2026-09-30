@@ -7,15 +7,12 @@ h5py
 Pillow
 six
 scipy
-opencv-python
+opencv-python-headless
 matplotlib
 tb-nightly
 future
 yacs
 gdown
-flake8
-yapf
-isort
 
 # added for bpbreid
 albumentations
@@ -25,4 +22,5 @@ deepdiff
 wandb
 monai
 torchmetrics==0.10.3
-
+# torchmetrics 0.10.3 imports pkg_resources, which setuptools 81 removed
+setuptools<81
